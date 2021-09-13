@@ -1,0 +1,191 @@
+/* ----------- GENERAL ----------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-bg-color: #FCBE20;
+    --second-color: #424242;
+    --third-color: #F5F5F5;
+    --main-font-family: 'Azeret Mono', monospace;
+    --font-size-default: 0.875rem;
+}
+
+body{
+    background-image: url(/img/bg-estetoscopio.jpg);
+    background-color: var(--main-bg-color);
+    background-color: #D3E3E1;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+
+    font-family: var(--main-font-family);
+}
+
+input{
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+/* ----------- MAIN ----------*/
+
+#main{
+    /* max-width: 980px; */
+    max-height: 500px;
+    margin-top: 10%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main .title{
+    font-size: 1.375rem;
+    text-shadow: 1px 0px 1px #0000008c;
+    border-bottom: 2px solid #fe43265d;
+    border-top: 2px solid #fe43265d;
+    background-color: #d3e3e181;
+    opacity: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+
+    background: var(--second-color);
+    min-width: 300px;
+    min-height: 280px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 15px 2px;
+    box-shadow: 3px 1px 7px #0000009a;
+
+    opacity: 90%;
+}
+
+.form-container label{
+    display: block;
+    color: var(--third-color);
+    text-shadow: 0px 0px 1px #0000007a;
+    padding-top: 15px;
+    font-size: var(--font-size-default);
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+.infos button{
+    margin-top: 25px;
+    min-width: 90px;
+    min-height: 30px;
+    outline: none;
+    border-radius: 5px;
+
+    font-family: var(--main-font-family);
+    font-size: var(--font-size-default);
+    background-color: #FFF;
+}
+
+.infos button:hover{
+    cursor: pointer;
+    background-color: #FECC04;
+    font-weight: bold;
+    transition: .6s;
+}
+
+.result{
+    display: none;
+
+    margin-top: 45px;
+    min-width: 250px;
+    max-width: 350px;
+    max-height: 130px;
+    padding: 15px;
+    background: #FFF;
+    border-radius: 7px;
+    box-shadow: 1px 0px 3px #00000075;
+    opacity: 90%;
+
+    font-size: var(--font-size-default);
+    text-align: center;
+}
+
+
+
+/* ----------- FOOTER ----------*/
+
+#footer{
+    background: var(--second-color);
+    color: var(--third-color);
+    min-height: 50px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75rem;
+    box-shadow: 0px -1px 1px #00000073;
+}
+
+#footer a{
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+#footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* -----------------------------*/
+/* ----------- MEDIA ----------*/
+/* -----------------------------*/
+
+
+@media (min-width: 560px){
+    #main .title{
+        font-size: 1.875rem;
+    }
+    .form-container{
+        min-width: 450px;
+    }
+    .form-container label{
+        font-size: 1.14rem;
+    }
+    .infos{
+        min-width: 270px;
+    }
+    .infos input{
+        min-width: 300px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .result{
+        font-size: 1rem;
+        max-width: 550px;
+    }
+}
+
+
