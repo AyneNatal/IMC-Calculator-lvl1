@@ -15,8 +15,7 @@
 }
 
 body{
-    background-image: url(/img/bg-estetoscopio-M.jpg);
-    background-color: var(--main-bg-color);
+    background-image: url(/img/bg-estetoscopio-P.jpg);
     background-color: #D3E3E1;
     background-size: cover;
     background-attachment: fixed; 
