@@ -15,7 +15,7 @@
 }
 
 body{
-    /* background-image: linear-gradient(75deg,#414345, #232526 ); */
+    background-image: linear-gradient(75deg,#414345, #232526 );
     background-image: url(/img/estetoscopio-pretoebranco-mmm.jpg);
     background-size: cover;
     background-attachment: fixed; 
