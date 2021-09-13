@@ -11,11 +11,11 @@ function IMC (){
         const weight = +iptWeight;
 
         if(!height){
-            alert('Informe um Peso Válido');
+            alert('Informe uma Altura Válida (utilize somente números e separe as casas decimais por ponto (.)');
             return
         }
         else if(!weight){
-            alert('Informe uma Altura Válida');
+            alert('Informe um Peso Válido (utilize somente números e separe as casas decimais por ponto (.)');
             return
         }
 
